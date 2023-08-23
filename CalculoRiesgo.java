@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 public class CalculoRiesgo {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         // Pedir la edad de la persona
         System.out.print("Ingrese la edad de la persona: ");
-        int edad = scanner.nextInt();
+        int edad = sc.nextInt();
 
         // Pedir el índice de masa corporal (IMC) de la persona
         System.out.print("Ingrese el IMC de la persona: ");
-        double imc = scanner.nextDouble();
+        double imc = sc.nextDouble();
 
         // Calcular el riesgo de enfermedades coronarias (usando una fórmula de ejemplo)
         double riesgo = calcularRiesgoCoronario(edad, imc);
@@ -18,7 +18,7 @@ public class CalculoRiesgo {
         // Mostrar el resultado
         System.out.println("El riesgo de enfermedad es: " + riesgo);
 
-        scanner.close();
+        sc.close();
     }
 
     // Función para calcular el riesgo de enfermedades coronarias (ejemplo)
