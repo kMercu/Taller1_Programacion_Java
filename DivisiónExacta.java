@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 public class DivisiónExacta {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Ingrese el dividendo ");
-        int dividendo = scanner.nextInt();
+        int dividendo = sc.nextInt();
 
         System.out.print("Ingrese el divisor ");
-        int divisor = scanner.nextInt();
+        int divisor = sc.nextInt();
 
-        scanner.close();
+        sc.close();
 
         if (divisor != 0) {
             int cociente = dividendo / divisor;
